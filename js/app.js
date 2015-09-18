@@ -124,7 +124,7 @@ var app = {
 
 
         $scope.showPage = function(index) {
-            $http({method: 'POST', url: 'http://localhost/seva60PlusAndroidAPI/show_hum_stat', data: {'hum_phone_no': '9732604208'}}).success(function(data) {
+            $http({method: 'POST', url: 'http://seva60plus.co.in/seva60PlusAndroidAPI/show_hum_stat', data: {'hum_phone_no': '9732604208'}}).success(function(data) {
                 //console.log(data);
 
                 //var jvar = jQuery.parseJSON(data);
