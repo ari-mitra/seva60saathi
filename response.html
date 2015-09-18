@@ -1,0 +1,46 @@
+<ons-page ng-controller="ResponseController">
+
+    <ons-toolbar>
+        <div class="left"><ons-back-button>Back</ons-back-button></div>
+        <div class="center">Seva60Plus</div>
+    </ons-toolbar>
+   
+    <ons-scroller>
+        <section class="home-grid">
+          
+
+            <ons-list class="list-top">
+                <ons-list-header style="text-align: center;">{{item.title}}</ons-list-header>
+                <!--<ons-list-item modifier="chevron">-->
+                    <ons-row align="center">
+                        <ons-col> 
+                            Date
+                        </ons-col>
+                        <ons-col>
+                            Time
+                        </ons-col>
+                        <ons-col>
+                            Response
+                        </ons-col>
+                    </ons-row> 
+                    <ons-row align="center" ng-repeat="items in item" ng-if="items.added_on">
+                        <ons-col> 
+                           {{items.added_on}}
+                        </ons-col>
+                        <ons-col>
+                            {{items.added_time}}
+                        </ons-col>
+                        <ons-col>
+                            {{items.hum_response}}
+                        </ons-col>
+                    </ons-row> 
+                    
+                <!--</ons-list-item>-->
+            </ons-list>
+
+           
+        </section>
+
+    </ons-scroller>
+
+</ons-page>

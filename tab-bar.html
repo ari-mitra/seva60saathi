@@ -1,0 +1,41 @@
+<ons-page ng-controller="MainController"> 
+    <ons-tabbar>    
+        <ons-tabbar-item page="main.html" label="Terms Of Service"   ng-click="show1()" active="true"></ons-tabbar-item>
+        <ons-tabbar-item page="main.html" label="Privacy Policy" ng-click="show2()"></ons-tabbar-item>
+    </ons-tabbar>
+   <ons-modal var="modal1">
+
+        <div class="terms">
+            <button id='close' ng-click="hide1()" value="close">close</button>
+            <h3>Terms and Conditions</h3>
+
+            <h4>General</h4>
+
+            <ul>
+                <li>list item number one</li>
+                <li>list item number two</li>
+                <li>list item number three</li>
+            </ul>
+
+        </div>
+        <!--<ons-button ng-click="hide()" style="margin:20px 0 0 0;">Close Modal View</ons-button>-->
+    </ons-modal>
+    <ons-modal var="modal2">
+
+        <div class="terms">
+            <button id='close' ng-click="hide2()" value="close">close</button>
+            <h3>Privacy and policy</h3>
+
+            <h4>General</h4>
+
+            <ul>
+                <li>list item number one</li>
+                <li>list item number two</li>
+                <li>list item number three</li>
+            </ul>
+
+        </div>
+        <!--<ons-button ng-click="hide()" style="margin:20px 0 0 0;">Close Modal View</ons-button>-->
+    </ons-modal>
+  
+</ons-page>

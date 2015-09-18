@@ -1,0 +1,28 @@
+<ons-page sliding-menu-ignore="true" ng-controller="MainController">
+
+    <!--    <ons-toolbar>
+        <div class="left">
+        <ons-toolbar-button onclick="menu.toggleMenu()">
+        <ons-icon icon="bars">
+        </ons-toolbar-button>
+        </div>
+        <div class="center">Login</div>
+        </ons-toolbar>-->
+
+    <div class="main-image-wrapper-copy">
+        <img src="img/sevalogo.png" class="profile-image"><br/>
+        <span>
+            seva60plus<br/>
+            SAATHI
+        </span>
+    </div>
+    <br/>
+    <br/>
+    <ons-row align="center">
+        <ons-col>
+            <button class="button login-button" ng-click="appNavigator.pushPage('hum.html',{title: 'Hum', animation: 'slide'})">Please tap to enter</button>
+            <span class="loading" ng-hide="true"><i class="fa fa-spin fa-circle-o-notch"></i> Loading</span>
+        </ons-col>
+    </ons-row>    
+       
+</ons-page>
